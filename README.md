@@ -1,3 +1,21 @@
-# gb-npm-modules
-Este repositorio contiene módulos compartidos que utilizan los proyectos de Garbarino.com
-Por cuestiones de simplicidad, están repartidos en branches y prefijados con gb-
+# Moblet
+
+## Install module
+    $ npm install git+https://git@github.com/J-Gallo/moblet.git --save
+
+## Require module
+    var device = require('get-user-agent');
+
+## Functions
+
+  * detectDevice
+  * isMobile
+  * isIOS
+  * isAndroid
+
+## Usage
+
+  * device.detectDevice(userAgent) //return mobile, tablet, desktop
+  * device.isMobile(userAgent) // return boolean
+  * device.isIOS(userAgent) // return boolean
+  * device.isAndroid(userAgent) // return boolean

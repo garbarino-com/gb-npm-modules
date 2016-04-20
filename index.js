@@ -28,12 +28,12 @@ exports.isMobile = function(userAgent) {
 };
 
 exports.isIOS = function(userAgent) {
-    var ua = (userAgent != undefined) ? userAgent.toLowerCase() : "";
+    var ua = (typeof userAgent !== "undefined") ? userAgent.toLowerCase() : "";
     return (ua.indexOf('iphone') > -1 || ua.indexOf('ipad') > -1);
 };
 
 
 exports.isAndroid = function(userAgent) {
-    var ua = (userAgent != undefined) ? userAgent.toLowerCase() : "";
+    var ua = (typeof userAgent !== "undefined") ? userAgent.toLowerCase() : "";
     return (ua.indexOf('android') > -1 ? true : false);
 };

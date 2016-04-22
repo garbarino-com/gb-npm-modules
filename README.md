@@ -1,7 +1,7 @@
 # gb-device-detection (Moblet @juanga)
 
 ## Install module
-    $ npm install git+https://git@github.com:garbarino-com/gb-npm-modules.git#gb-device-detection --save-dev
+    $ npm install git+https://github.com/garbarino-com/gb-npm-modules.git#gb-device-detection --save-dev
 
 ## Require module
     var device = require('get-user-agent');

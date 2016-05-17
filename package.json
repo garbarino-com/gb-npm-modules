@@ -4,7 +4,7 @@
   "description": "Normandia UI Partials",
   "main": "index.js",
   "scripts": {
-    "start": "npm install",
+    "preinstall": "npm install",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/garbarino-com/gb-npm-modules#readme",
   "files": [
-    "normandia"
+    "normandia-partials"
   ],
   "dependencies": {
     "del": "^2.2.0",

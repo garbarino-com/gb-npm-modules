@@ -1,0 +1,15 @@
+<nav class="gb-mobile-menu-breadcrumb">
+    <ul>
+        <li>
+            <a class="gb-mobile-menu-back" onclick="gb.normandia.gotoLayer(1)">volver</a>
+        </li>
+    </ul>
+</nav>
+<span class="gb-mobile-menu-title">{{name}}</span>
+<nav class="gb-mobile-menu-list">
+    <ul>
+        {{#children}}
+            <li onclick="gb.normandia.gotoLayer(3, '{{id}}')">{{name}}</li>
+        {{/children}}
+    </ul>
+</nav>

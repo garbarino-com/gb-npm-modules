@@ -1,0 +1,121 @@
+<header class="gb-header">
+    <div class="gb-category-submenu-overlay"></div>
+    <div class="gb-top-header">
+        <div class="gb-wrapper">
+            <ul>
+                <li>
+                    <i class="gb-icon-marker"></i>
+                    <a href="/sucursales">Sucursales</a>
+                </li>
+                <li>
+                    <i class="gb-icon-phone"></i>
+                    <a href="/html/venta-telefonica">Venta Telefónica</a>
+                </li>
+                <li>
+                    <i class="gb-icon-phone"></i>
+                    <a href="/contactos/cac">Atención al Cliente</a>
+                </li>
+                <li>
+                    <img src="{{statics_base_url}}/{{app_version}}/images/viajes.png" height="22px" width="22px" alt=""/>
+                    <a href="http://www.garbarinoviajes.com.ar/?utm_medium=bannerheader&utm_source=garbarino.com/">Garbarino Viajes</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="gb-main-header">
+        <div class="gb-wrapper">
+          <div class="gb-mobile-menu-button"><span></span></div>
+          <div class="logo">
+              <a href="/">
+                  <img src="{{statics_base_url}}/{{app_version}}/images/logo-garbarino-blanco.svg" width="235px" height="32px" alt="Garbarino logo" />
+              </a>
+          </div>
+
+          <form id="products-search" action="#" method="get" role="search">
+              <div class="form-search">
+                  {{> autocomplete}}
+              </div>
+          </form>
+
+          <div class="header-links">
+              <div class="user-options">
+                  <p><span id="username">Iniciar sesión</span></p>
+                  <div class="user-options-account-button">
+                      <strong>Mi cuenta</strong>
+                      <ul id="options-login-non-logged" class="user-options-login">
+                          <li>
+                              <a href="/user/signin" class="user-options-login-button">Iniciar sesión</a>
+                          </li>
+                          <li>
+                              <p class="user-options-login-register">¿Sos nuevo? <a href="/user/signup">Registrate</a></p>
+                          </li>
+                      </ul>
+                      <ul style="display:none;" id="options-login-logged" class="user-options-login">
+                          <li>
+                              <p><a href="/user" >Editar cuenta</a></p>
+                          </li>
+                          <li>
+                              <p><a href="/user/signout">Cerrar sesión</a></p>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+              <div class="header-icons">
+                  <ul>
+                      <li>
+                          <a href="/mi-cuenta/favoritos">
+                            <span id="wishlist-icon">
+                              <i class="gb-icon-heart"></i>
+                            </span>
+                          </a>
+                      </li>
+                      <li>
+                          <a href="/carrito">
+                            <span id="cart-icon">
+                                <i class="gb-icon-cart"></i>
+                            </span>
+                          </a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="gb-category-menu">
+
+      {{#menuCommon}}
+          <ul>
+              {{#children}}
+                  <li>
+                      <span class="gb-category-text">{{name}}</span>
+                      <!--Is this ok?-->
+                      <div class="gb-category-submenu" style="background-image: url(http:{{banner.url}})">
+                          <span class="gb-category-submenu-close">&#10005;</span>
+                          <div class="gb-category-submenu-title">
+                              <h2><a href="{{permalink}}">{{name}}</a></h2> <a href="{{permalink}}" class="gb-category-submenu-view-all">Ver todo</a>
+                          </div>
+                          <ul class="gb-category-submenu-list">
+                              {{#children}}
+                                  <li>
+                                      <a href="{{permalink}}" class="gb-category-submenu-list-title">{{name}}</a>
+                                      <nav class="gb-category-submenu-list-items">
+                                          <ul>
+                                              {{#children}}
+                                                  <li><a href="{{permalink}}">{{{name}}}</a></li>
+                                              {{/children}}
+                                          </ul>
+                                      </nav>
+                                  </li>
+                              {{/children}}
+                          </ul>
+                      </div>
+                  </li>
+              {{/children}}
+          </ul>
+      {{/menuCommon}}
+
+    </div>
+
+</header>

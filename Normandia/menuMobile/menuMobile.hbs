@@ -1,0 +1,86 @@
+<div class="gb-mobile-menu-overlay"></div>
+<div class="gb-mobile-menu">
+    <div class="gb-mobile-menu-layer gb-level-1 gb-active">
+        <div class="gb-mobile-menu-header">
+            <div class="gb-mobile-menu-logo"><img src="{{statics_base_url}}/{{app_version}}/images/profile-mobile-menu.svg"></div>
+            <div class="gb-mobile-menu-user">
+                <a href="#" id="menu-username-a" class="myaccount-user-logged norma-logged">
+                    <span class="gb-mobile-menu-username"><span id="menu-username"></span></span>
+                    <span id="menu-mail" class="gb-mobile-menu-mail">Mi cuenta</span>
+                </a>
+                <div id="menu-username-a" class="myaccount-user-not-logged norma-not-logged">
+                    <span id="menu-mail" class="gb-mobile-menu-myaccount-title">Mi cuenta</span>
+                    <div class="gb-mobile-menu-logoptions">
+                        <a href="/user/signin">Ingresar</a> | <a href="/user/signup">Registrarme</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="gb-mobile-menu-search">
+            <input type="text" placeholder="Buscar">
+            <span class="icon-search"></span>
+        </div>
+        <span class="gb-mobile-menu-title">categorías</span>
+        <nav class="gb-mobile-menu-list">
+            <ul>
+                {{#menu}}
+                    <li onclick="gb.normandia.gotoLayer(2, '{{id}}')">{{name}}</li>
+                {{/menu}}
+            </ul>
+        </nav>
+        <nav class="gb-mobile-menu-list gb-mobile-menu-options">
+            <ul>
+                <li>
+                    <a id="cart-items-mobile" href="/carrito">
+                        <span class="gb-mobile-menu-list-icon">
+                            <span class="gb-icon-cart"></span>
+                        </span>
+                        Carrito de compras
+
+                    </a>
+                </li>
+                <li>
+                    <a id="wishlist-items-mobile" href="/mi-cuenta/favoritos">
+                        <span class="gb-mobile-menu-list-icon">
+                            <span class="gb-icon-heart"></span>
+                        </span>
+                        Favoritos
+                    </a>
+                </li>
+                <li>
+                    <a href="/sucursales">
+                      <span class="gb-mobile-menu-list-icon">
+                          <span class="gb-icon-marker"></span>
+                      </span>
+                        Sucursales
+                    </a>
+                </li>
+                <li>
+                    <a href="/html/venta-telefonica">
+                      <span class="gb-mobile-menu-list-icon">
+                          <span class="gb-icon-phone"></span>
+                      </span>
+                        Venta telefónica
+                    </a>
+                </li>
+                <li>
+                    <a href="/contactos/cac">
+                      <span class="gb-mobile-menu-list-icon">
+                          <span class="gb-icon-phone"></span>
+                      </span>
+                        Atención al cliente
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="gb-mobile-menu-layer gb-level-2">
+
+    </div>
+    <div class="gb-mobile-menu-layer gb-level-3">
+
+    </div>
+    <div class="gb-mobile-menu-layer gb-level-4">
+
+    </div>
+</div>

@@ -1,14 +1,23 @@
 {
   "name": "get-user-agent",
   "version": "1.0.0",
-  "description": "",
+  "description": "Normandia UI Partials",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "preinstall": "npm install",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Juan Gallo",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/garbarino-com/gb-npm-modules.git#gb-normandia-partials"
+  },
+  "author": "Andrés Villanueva",
   "license": "ISC",
-  "devDependencies": {
-    "chai": "^3.4.1"
-  }
+  "bugs": {
+    "url": "https://github.com/garbarino-com/gb-npm-modules/labels/Normandia"
+  },
+  "homepage": "https://github.com/garbarino-com/garba-ui#readme",
+  "files": [
+    "normandia"
+  ]
 }

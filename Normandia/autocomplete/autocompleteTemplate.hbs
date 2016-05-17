@@ -1,0 +1,79 @@
+{{#if this.product_brand}}
+    <ul class="gb-search-dropdown-list gb-show gb--top-line">
+        {{#each this.product_brand}}
+            <li>
+                <a href="{{this.url}}">
+                    {{this.description}}
+                    <small class="gb-search-dropdown-list-category">{{this.niceCategory}}</small>
+                </a>
+            </li>
+        {{/each}}
+    </ul>
+{{/if}}
+
+{{#if this.categories}}
+    <ul class="gb-search-dropdown-list gb-show gb--top-line">
+        {{#each this.categories}}
+            <li>
+                <a href="{{this.url}}">
+                    {{this.description}}
+                    <small class="gb-search-dropdown-list-category">{{this.niceCategory}}</small>
+                </a>
+            </li>
+        {{/each}}
+    </ul>
+{{/if}}
+
+{{#if this.product_list}}
+    <ul class="gb-search-dropdown-list gb-show gb--top-line">
+        {{#each this.product_list}}
+            <li>
+                <a href="{{this.url}}">
+                    {{this.description}}
+                    <small class="gb-search-dropdown-list-category">{{this.niceCategory}}</small>
+                </a>
+            </li>
+        {{/each}}
+    </ul>
+{{/if}}
+
+
+{{#if this.products}}
+    <ul class="gb-search-dropdown-list gb-show gb--top-line">
+        {{#each this.products}}
+            <li class="gb--with-img">
+                <a href="{{this.url}}">
+                    <img class="gb-search-dropdown-list-img" src="{{this.image}}"/>
+                    {{this.description}}
+                    <small class="gb-search-dropdown-list-category">{{this.niceCategory}}</small>
+                </a>
+            </li>
+        {{/each}}
+    </ul>
+{{/if}}
+
+{{#if this.landings}}
+    <ul class="gb-search-dropdown-list gb-show gb--top-line">
+        {{#each this.landings}}
+            <li>
+                <a href="{{this.url}}">
+                    {{this.description}}
+                    <small class="gb-search-dropdown-list-category">{{this.niceCategory}}</small>
+                </a>
+            </li>
+        {{/each}}
+    </ul>
+{{/if}}
+
+{{#if this.suggestions}}
+    <ul class="gb-search-dropdown-list gb-show gb--top-line">
+        {{#each this.suggestions}}
+            <li>
+                <a href="{{this.url}}">
+                    {{this.description}}
+                    <small class="gb-search-dropdown-list-category">{{this.niceCategory}}</small>
+                </a>
+            </li>
+        {{/each}}
+    </ul>
+{{/if}}

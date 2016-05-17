@@ -1,0 +1,54 @@
+<div class="gb-mobile-menu-overlay"></div>
+<div class="gb-mobile-menu">
+    <div class="gb-mobile-menu-layer gb-level-1 gb-active">
+        <div class="gb-mobile-menu-header">
+            <div class="gb-mobile-menu-logo"><img src="{{statics_base_url}}/{{app_version}}/images/profile-mobile-menu.svg"></div>
+            <div class="gb-mobile-menu-user">
+                <span class="gb-mobile-menu-username">Hola <span id="menu-username"></span></span>
+                <span id="menu-mail" class="gb-mobile-menu-mail"></span>
+            </div>
+        </div>
+        <div class="gb-mobile-menu-search">
+            <input type="text" placeholder="Buscar">
+            <span class="icon-search"></span>
+        </div>
+        <span class="gb-mobile-menu-title">categorías</span>
+        <nav class="gb-mobile-menu-list">
+            <ul>
+                {{#menu}}
+                    <a href="{{permalink}}"><li>{{name}}</li></a>
+                {{/menu}}
+            </ul>
+        </nav>
+        <nav class="gb-mobile-menu-list gb-mobile-menu-options">
+            <ul>
+                <li>
+                    <span class="gb-mobile-menu-list-icon">
+                        <span class="icon-basket"></span>
+                    </span>
+                    Carrito de compras
+                    <span class="gb-mobile-menu-list-amount">2</span>
+                </li>
+                <li>
+                    <span class="gb-mobile-menu-list-icon">
+                        <span class="icon-heart"></span>
+                    </span>
+                    Favoritos
+                    <span class="gb-mobile-menu-list-amount">1</span>
+                </li>
+                <li>
+                    <span class="gb-mobile-menu-list-icon">
+                        <span class="icon-location"></span>
+                    </span>
+                    Favoritos
+                </li>
+                <li class="gb-mobile-menu-list-highlighted">
+                    <span class="gb-mobile-menu-list-icon">
+                        <span class="icon-phone"></span>
+                    </span>
+                    Venta telefónica
+                </li>
+            </ul>
+        </nav>
+    </div>
+</div>

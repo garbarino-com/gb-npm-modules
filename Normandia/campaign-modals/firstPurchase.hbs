@@ -1,0 +1,67 @@
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	<div class="modal-dialog" id="modal-dialog-purchase" role="document">
+		<div class="modal-content" id="modal-content-purchase">
+			<div class="modal-body">
+				<div class="coupon-container">
+					<div class="right-fp">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="btn_close">&times;</span></button>
+					</div>
+					<div class="panel">
+						<img src="//d3lxl00auziu6e.cloudfront.net/epi/resource/l/productos-left-2.png/ef2ea6f46f96a4a066aad51bbbbc57cc5c5b5bf85c74a46c32e9387c3a3c1833" id="img-prod" class="img">
+						<div class="coupon">
+							<div class="coupon-header">
+								<div class="left-fp">
+								<h2 class="h2-fp">
+									OBTENÉ <b>$150</b> DE REGALO
+									<br>
+									<b>PARA TU PRIMERA COMPRA</b>
+									<br>
+									EN GARBARINO.COM
+								</h2>
+								<p>(sólo para compras superiores a $2.500)</p>
+								</div>
+							</div>
+
+							<div class="coupon-form">
+								<div id="content">
+								  <div class="form-group">
+								    <label class="label-fp" for="email">Email *</label>
+								    <input type="email" class="form-control" id="email" name="email" required="required" >
+								  </div>
+								  <div class="form-group">
+								    <label class="label-fp" for="pwd">DNI *</label>
+								    <input type="text" class="form-control" id="idValue" namw="idValue" required="required" >
+								  </div>
+								  <div class="form-group">
+								    <select class="form-control" id="gender" name="gender" ng-model="gender">
+								        <option value="">- Género -</option>
+								        <option value="MALE">Masculino</option>
+								        <option value="FEMALE">Femenino</option>
+							      	</select>
+								  </div>
+								  <p id="error"></p>
+								  <button type="submit" id="Enviar" class="btn submit">OBTENER CÓDIGO</button>
+								</div>
+
+								<div id="div-ok" style="display: none; height: 240px;">
+									<div role="alert" class="alert-success">
+				                      <i class="icon-ok-circled"></i>
+				                      Te enviamos un código de descuento por mail. ¡Gracias por subscribirte!
+				                    </div>
+			                    </div>
+
+			                    <div id="div-error" style="display: none; height: 240px;">
+			                    	<div role="alert" ng-if="msg.type == 'warning'" class="alert-warning"  id="div-error">"Este email y/o DNI ya fueron registrados. Chequeá tus bandejas de entradas y el correo no deseado."</div>
+			                    </div>
+
+								<div class="coupon-legales">
+									PROMOCIÓN VALIDA PARA LA REPÚBLICA ARGENTINA DESDE EL 10/02/2016 HASTA EL 10/04/2016. TODAS AQUELLAS PERSONAS QUE NO HAYAN REALIZADO NINGUNA COMPRA EN GARBARINO.COM ("EL SITIO"), Y DENTRO DE LA FECHA DE VIGENCIA SE REGISTREN EN HTTPS://WWW.GARBARINO.COM.AR/PRIMERAS-COMPRAS OBTENDRÁN UN CUPÓN POR UN VALOR DE $ 150 (CIENTO CINCUENTA PESOS) PARA SER UTILIZADO EN SU PRIMERA COMPRA EN EL SITIO, SIEMPRE QUE LA MISMA SEA SUPERIOR A $2500 (PESOS DOS MIL QUINIENTOS). DICHO CUPON TENDRÁ UNA VALIDEZ DE TRES MESES A PARTIR DE SU FECHA DE EMISIÓN. CADA CUPÓN SE PODRÁ UTILIZAR UNA ÚNICA VEZ. PROMOCIÓN NO ACUMULABLE CON OTRAS PROMOCIONES U OFERTAS. EL CUPÓN NO SERÁ EN NINGÚN CASO CANJEABLE POR DINERO EN EFECTIVO.
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

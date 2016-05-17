@@ -13,7 +13,8 @@
   },
   "homepage": "https://github.com/garbarino-com/gb-npm-modules#readme",
   "files": [
-    "normandia-partials"
+    "servces",
+    "views"
   ],
   "dependencies": {
     "del": "^2.2.0",

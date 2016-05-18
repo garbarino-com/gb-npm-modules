@@ -13,7 +13,6 @@
   },
   "homepage": "https://github.com/garbarino-com/gb-npm-modules#readme",
   "files": [
-    "services",
     "views"
   ],
   "dependencies": {

@@ -4,7 +4,7 @@
   "description": "Normandia UI Partials",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/garbarino-com/gb-npm-modules.git#gb-normandia-partials"
+    "url": "git+https://github.com/garbarino-com/gb-npm-modules.git#gb-normandia"
   },
   "author": "Andrés Villanueva",
   "license": "ISC",

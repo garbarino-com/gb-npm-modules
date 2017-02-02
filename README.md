@@ -1,4 +1,4 @@
-# gb-device-detection (Moblet @juanga)
+# gb-device-detection (Moblet @J-Gallo)
 
 ## Install module
     $ npm install git+https://github.com/garbarino-com/gb-npm-modules.git#gb-device-detection --save-dev
